@@ -1,0 +1,21 @@
+/* Fibonacci Sequence in PL/0 by Jeremy Harden 28SEP2023 */
+
+
+int integer1,integer2,integer3,integer4,counter;
+
+begin
+	integer1 := 0;
+	integer2 := 1;
+	integer4 := 1;
+	in counter;
+	out integer1;
+	out integer2;
+	while integer4 <= counter do
+		begin
+		  integer3 := integer1 + integer2;
+			out integer3;
+			integer1 := integer2;
+			integer2 := integer3;
+			integer4 := integer4 + 1;
+		end;
+end.

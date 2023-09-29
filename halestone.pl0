@@ -1,0 +1,14 @@
+/* Halestone Trajectory in PL/0 by Jeremy Harden 28SEP2023 */
+
+int integer1;
+
+begin
+	in integer1;
+	while integer1 <> 1 do
+		begin
+			if integer1 = integer1 / 2 * 2 then
+				integer1 := integer1 / 2
+			else integer1 := integer1 * 3 + 1;
+			out integer1;
+		end;
+end. 
